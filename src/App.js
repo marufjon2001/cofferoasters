@@ -3,12 +3,14 @@ import Home from './Component/Home/Home';
 import { Box } from '@mui/material';
 import Footer from './Component/Footer/Footer';
 import NavbarCof from './Component/Navbar/Navbar/Navbar';
+import Abautus from './Component/Abaoutus/Abautus';
 
 const App = () => {
   return (
     <Box sx={{backgroundColor: '#F2F2F2'}}>
       <NavbarCof/>
-      <Home/>
+      {/* <Home/> */}
+      <Abautus/>
       <Footer/>
     </Box>
   );
