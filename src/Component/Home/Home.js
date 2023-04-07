@@ -64,6 +64,23 @@ const Home = () => {
       text3: "of our roasters.",
     },
   ]);
+  const [num,setnum] = useState([
+    {
+        numer: '01',
+        text: 'Pick your coffee',
+        p: 'Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.',
+    },
+    {
+        numer: '02',
+        text: 'Choose the frequency',
+        p: 'Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.',
+    },
+    {
+        numer: '03',
+        text: 'Receive and enjoy!',
+        p: 'We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.',
+    },
+  ])
 
   return (
     <Box>
@@ -301,11 +318,52 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Box mt={15}>
-        vckljvkddkljvxkjl
+      <Box mt={15} display={"flex"} justifyContent={'center'}>
+        <Box width={'81%'}>
+           <Box>
+            <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '32px',color: '#83888F'}}>How it works</Typography>
+            <br /><br />
+            <Box ml={2} sx={{width: '70%',border: '2px solid #FDD6BA',position: 'relative'}}>
+                <Box sx={{width: '20px',height: '20px',position: 'absolute',border: '2px solid #0E8784',borderRadius: '20px',marginTop: '-10px',marginLeft: '-18px'}}></Box>
+                <Box sx={{width: '20px',height: '20px',position: 'absolute',border: '2px solid #0E8784',borderRadius: '20px',marginTop: '-10px',marginLeft: '50%'}}></Box>
+                <Box sx={{width: '20px',height: '20px',position: 'absolute',border: '2px solid #0E8784',borderRadius: '20px',marginTop: '-10px',marginLeft: '100%'}}></Box>
+            </Box>
+           </Box>
+           <Box mt={10} display={"flex"} width={"100%"}>
+            {
+                num.map((item,index)=>(
+                    <Box>
+                        <Box width={"71%"}>
+                    <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '72px',lineHeight: '72px',color: '#FDD6BA',}}>{item.numer}</Typography>
+                    <br />
+                    <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '32px',lineHeight: '36px',color: '#333D4B'}}>{item.text}</Typography>
+                    <br />
+                    <Typography style={{fontFamily: 'Barlow',fontWeight: '400',fontSize: '16px',lineHeight: '26px',color: '#333D4B'}}>{item.p}</Typography>
+                        </Box>
+                   </Box>
+                ))
+            }
+           </Box>
+           <br />
+           <Button
+              style={{
+                fontFamily: "Fraunces",
+                fontWeight: "900",
+                fontSize: "18px",
+                lineHeight: "25px",
+                backgroundColor: "#0E8784",
+                borderRadius: "10px",
+                height: "50px",
+                color: "white",
+              }}
+            >
+              Create your plan
+            </Button>
+            <br /><br /><br />
+        </Box>
       </Box>
     </Box>
-  );
+  ); 
 };
 
 export default Home;
