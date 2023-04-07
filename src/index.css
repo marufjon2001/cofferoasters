@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Fraunces:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&display=swap');
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,4 +14,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar-collapse {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+}
+
+.me-auto {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 30px;
 }

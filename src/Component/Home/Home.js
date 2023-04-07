@@ -85,7 +85,7 @@ const Home = () => {
   return (
     <Box>
       <Box display={"flex"} justifyContent={"center"}>
-        <Box width={"90%"} height={"80%"} position={"relative"} mt={5}>
+        <Box width={"90%"} height={"80%"} position={"relative"} mt={2}>
           <Box position={"absolute"} ml={8} mt={16}>
             <Typography
               style={{
@@ -130,7 +130,7 @@ const Home = () => {
               Create your plan
             </Button>
           </Box>
-          <img src={home} alt="" />
+          <img width={"100%"} src={home} alt="" />
         </Box>
       </Box>
 
@@ -146,7 +146,7 @@ const Home = () => {
                   alignItems={"center"}
                   flexDirection={"column"}
                 >
-                  <img src={item.img} alt="" />
+                  <img width={'100%'} src={item.img} alt="" />
                   <Typography
                     style={{
                       fontFamily: "Fraunces",
