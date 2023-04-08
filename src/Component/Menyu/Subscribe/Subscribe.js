@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import subscribe from "../Images/Subscribe/subscribe.png"
+import subscribe from "../../Images/Subscribe/subscribe.png"
 import React, { useState } from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -113,6 +113,7 @@ const Subscribe = () => {
                     }
                     </Box>
                 <Box width={'70%'}>
+
                     <Box display={"flex"} alignItems={'center'} justifyContent={'space-between'} gap={5}>
                         <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '40px',lineHeight: '48px',color: '#83888F'}}>How do you drink your coffee?</Typography>
                         <ExpandMoreIcon style={{color: '#0E8784',fontSize: '40px',}}/>
@@ -135,6 +136,7 @@ const Subscribe = () => {
                       <br /><br />
                     </Box>
                     </Box>
+
                 </Box>
                 </Box>
             </Box>

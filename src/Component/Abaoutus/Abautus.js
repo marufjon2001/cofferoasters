@@ -9,7 +9,7 @@ import australia from "../Images/Abaout/australia.png"
 
 const Abautus = () => {
     return (
-        <Box>
+        <Box mt={3}>
             <Box display={"flex"} justifyContent={"center"}>
                 <Box width={"90%"} position={"relative"}>
                     <Box position={"absolute"}ml={10}mt={15}>
