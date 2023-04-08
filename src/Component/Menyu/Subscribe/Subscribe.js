@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 import subscribe from "../../Images/Subscribe/subscribe.png"
 import React, { useState } from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link } from 'react-router-dom';
 
 const Subscribe = () => {
     const [num,setnum] = useState([
@@ -24,26 +25,47 @@ const Subscribe = () => {
       const[son,setson] = useState([
         {
             son: '01',
-            harf: 'Preferences',
+            harf:  'Preferences',
+            active: true,
+            to: 'Beantype'
         },
         {
             son: '02',
             harf: 'Bean Type',
+            active: false,
+            to: ''
         },
         {
             son: '03',
             harf: 'Quantity',
+            active: false,
+            to: ''
         },
         {
             son: '04',
             harf: 'Grind Option',
+            active: false,
+            to: ''
         },
         {
             son: '05',
             harf: 'Deliveries',
+            active: false,
+            to: ''
         },
       ])
-      const [active,setactive] = useState(false)
+      let menuitem = (item) => {
+        setson(() => {
+            return son.map((sonItem) => {
+                if(sonItem.son === item.son) {
+                    sonItem.active = true;
+                }else{
+                    sonItem.active = false;
+                }
+                return sonItem;
+            })
+        })
+      };
       
     //   sx={[
     //     {
@@ -103,9 +125,12 @@ const Subscribe = () => {
                     {
                         son.map((item,index)=>(
                             <Box>
-                            <Box display={'flex'}alignItems={'center'} gap={3} sx={{cursor: 'pointer'}}>
-                               <Typography  style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '32px',color: '#83888F'}}>{item.son}</Typography>
-                                <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '32px',color: '#83888F'}}>{item.harf}</Typography>
+                            <Box onClick={()=> menuitem(item)} display={'flex'}alignItems={'center'} gap={3} sx={{cursor: 'pointer'}}>
+                                <Link style={{textDecoration: 'none',display: 'flex',gap: '30px'}} to={item.to}>
+                                 
+                            <Typography style={{"fontFamily": 'Fraunces', "fontWeight": '900', "fontSize": '20px', "lineHeight": '32px', "color": `${item.active ? "#333D4B" : "#83888F"}`}}>{item.son}</Typography>
+                                <Typography style={{"fontFamily": 'Fraunces', "fontWeight": '900', "fontSize": '20px', "lineHeight": '32px', "color": `${item.active ? "#333D4B" : "#83888F"}`}}>{item.harf}</Typography>
+                                </Link>
                             </Box>
                             <hr  style={{border: '1px solid #83888F'}}/>
                         </Box>

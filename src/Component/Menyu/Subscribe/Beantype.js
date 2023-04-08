@@ -46,23 +46,23 @@ const Beantype = () => {
                 <Box width={'70%'}>
 
                     <Box display={"flex"} alignItems={'center'} justifyContent={'space-between'} gap={5}>
-                        <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '40px',lineHeight: '48px',color: '#83888F'}}>How do you drink your coffee?</Typography>
+                        <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '40px',lineHeight: '48px',color: '#83888F'}}>What type of coffee?</Typography>
                         <ExpandMoreIcon style={{color: '#0E8784',fontSize: '40px',}}/>
                     </Box>
                     <br /><br />
                     <Box display={'flex'} gap={2.5}>
                     <Box width={"30%"} sx={{borderRadius: '10px',backgroundColor: '#F4F1EB',cursor: 'pointer'}} p={3}>
-                      <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '60px',color: '#333D4B'}}>Capsule</Typography>
+                      <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '60px',color: '#333D4B'}}>Single Origin</Typography>
                       <Typography style={{fontFamily: 'Barlow',fontWeight: '400',fontSize: '16px',lineHeight: '26px',color: '#333D4B'}}>Compatible with <br /> Nespresso systems and <br /> similar brewers</Typography>
                       <br /><br />
                     </Box>
                     <Box width={"30%"} sx={{borderRadius: '10px',backgroundColor: '#0E8784',cursor: 'pointer'}} p={3}>
-                      <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '60px',color: '#FFFFFF'}}>Filter</Typography>
+                      <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '60px',color: '#FFFFFF'}}>Decaf</Typography>
                       <Typography style={{fontFamily: 'Barlow',fontWeight: '400',fontSize: '16px',lineHeight: '26px',color: '#FFFFFF'}}>For pour over or drip <br /> methods like Aeropress, <br /> Chemex, and V60</Typography>
                       <br /><br />
                     </Box>
-                    <Box width={"30%"} sx={{borderRadius: '10px',backgroundColor: '#FDD6BA',cursor: 'pointer'}} p={3}>
-                      <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '60px',color: '#333D4B'}}>Espresso</Typography>
+                    <Box width={"30%"} sx={{borderRadius: '10px',backgroundColor: '#F4F1EB',cursor: 'pointer'}} p={3}>
+                      <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '60px',color: '#333D4B'}}>Blended</Typography>
                       <Typography style={{fontFamily: 'Barlow',fontWeight: '400',fontSize: '16px',lineHeight: '26px',color: '#333D4B'}}>Dense and finely ground <br /> beans for an intense, <br /> flavorful experience</Typography>
                       <br /><br />
                     </Box>

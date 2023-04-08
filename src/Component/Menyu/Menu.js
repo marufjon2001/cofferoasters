@@ -10,10 +10,10 @@ const Menu = () => {
     return (
         <Box>
             <Subscribe/>
-            <Beantype/>
-            {/* <Routes>
+            {/* <Beantype/> */}
+            <Routes>
              <Route path='Beantype' element={<Beantype/>}/>
-            </Routes> */}
+            </Routes>
         </Box>
     );
 }
