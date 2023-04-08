@@ -5,10 +5,10 @@ import img from "../../Images/Navbar/Navbar.svg"
 const NavbarCof = () => {
   return (
     <div>
-      <Navbar style={{display: 'flex',justifyContent: 'center'}} bg="#F2F2F2;" expand="lg">
+      <Navbar style={{display: 'flex',justifyContent: 'center',alignItems: 'center'}} bg="#F2F2F2;" expand="lg">
         <br /><br /><br />
-      <div style={{width: '90%',display: 'flex',alignItems: 'center'}}>
-        <Navbar.Brand href="#home"><img src={img} alt="" /></Navbar.Brand>
+      <div style={{width: '90%',display: 'flex',alignItems: 'center',justifyContent:"space-between"}}>
+        <Navbar.Brand><img src={img} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse  id="basic-navbar-nav">
           <Nav className="me-auto">

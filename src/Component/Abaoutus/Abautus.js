@@ -74,6 +74,7 @@ const Abautus = () => {
                 </Box>
                 </Box>
             </Box>
+            <br />
         </Box>
     );
 }
