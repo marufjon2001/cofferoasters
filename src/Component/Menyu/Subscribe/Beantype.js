@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useState } from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Subscribe from './Subscribe';
 const Beantype = () => {
 
       const[son,setson] = useState([
@@ -28,20 +29,12 @@ const Beantype = () => {
       ])
     return (
         <div>
+            <Box>
+                <Subscribe/>
+            </Box>
              <Box display={'flex'} justifyContent={'center'} mt={10}>
                 <Box width={'82%'} display={"flex"} justifyContent={"space-between"}>
                 <Box width={'23%'} >
-                    {/* {
-                        son.map((item,index)=>(
-                            <Box>
-                            <Box display={'flex'}alignItems={'center'} gap={3} sx={{cursor: 'pointer'}}>
-                               <Typography  style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '32px',color: '#83888F'}}>{item.son}</Typography>
-                                <Typography style={{fontFamily: 'Fraunces',fontWeight: '900',fontSize: '24px',lineHeight: '32px',color: '#83888F'}}>{item.harf}</Typography>
-                            </Box>
-                            <hr  style={{border: '1px solid #83888F'}}/>
-                        </Box>
-                        ))
-                    } */}
                     </Box>
                 <Box width={'70%'}>
 

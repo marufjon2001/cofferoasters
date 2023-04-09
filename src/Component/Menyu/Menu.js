@@ -11,9 +11,9 @@ const Menu = () => {
         <Box>
             <Subscribe/>
             {/* <Beantype/> */}
-            <Routes>
+            {/* <Routes>
              <Route path='Beantype' element={<Beantype/>}/>
-            </Routes>
+            </Routes> */}
         </Box>
     );
 }

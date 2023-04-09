@@ -27,13 +27,13 @@ const Subscribe = () => {
             son: '01',
             harf:  'Preferences',
             active: true,
-            to: 'Beantype'
+            to: ''
         },
         {
             son: '02',
             harf: 'Bean Type',
             active: false,
-            to: ''
+            to: 'Beantype'
         },
         {
             son: '03',
@@ -127,7 +127,6 @@ const Subscribe = () => {
                             <Box>
                             <Box onClick={()=> menuitem(item)} display={'flex'}alignItems={'center'} gap={3} sx={{cursor: 'pointer'}}>
                                 <Link style={{textDecoration: 'none',display: 'flex',gap: '30px'}} to={item.to}>
-                                 
                             <Typography style={{"fontFamily": 'Fraunces', "fontWeight": '900', "fontSize": '20px', "lineHeight": '32px', "color": `${item.active ? "#333D4B" : "#83888F"}`}}>{item.son}</Typography>
                                 <Typography style={{"fontFamily": 'Fraunces', "fontWeight": '900', "fontSize": '20px', "lineHeight": '32px', "color": `${item.active ? "#333D4B" : "#83888F"}`}}>{item.harf}</Typography>
                                 </Link>
